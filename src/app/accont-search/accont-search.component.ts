@@ -13,7 +13,8 @@ export class AccontSearchComponent implements OnInit {
   user: any;
   repos: any;
   
-  constructor(private githubsearchService: GithubSearchService) {     this.githubsearchService.findUser().subscribe(user => {
+  constructor(private githubsearchService: GithubSearchService) {    
+     this.githubsearchService.findUser().subscribe(user => {
       console.log(user);
       this.user = user;
     });
