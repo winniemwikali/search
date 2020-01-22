@@ -17,7 +17,7 @@ export class GithubSearchService {
     this.repo = '';
   }
   findUser(): any {
-    return this.http.get("http://api.github.com/users/" + this.username + "?access_token=3f66f6f368de3e4186437492e27c7853efcc179a").pipe((res => res));
+    return this.http.get("https://api.github.com/users/" + this.username + "?access_token=3f66f6f368de3e4186437492e27c7853efcc179a").pipe((res => res));
   }
   findRepos(): any{
     return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=3f66f6f368de3e4186437492e27c7853efcc179a").pipe((res => res));
