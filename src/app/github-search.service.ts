@@ -17,14 +17,15 @@ export class GithubSearchService {
     this.repo = '';
   }
   findUser(): any {
-    return this.http.get("https://api.github.com/users/" + this.username + "?access_token=3f66f6f368de3e4186437492e27c7853efcc179a").pipe((res => res));
+    return this.http.get("https://api.github.com/users/" + this.username + "?access_token=f2be356f299b53e4094bcbf06e66c17837159ac7").pipe((res => res));
   }
   findRepos(): any{
-    return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=3f66f6f368de3e4186437492e27c7853efcc179a").pipe((res => res));
+    return this.http.get("https://api.github.com/users/" + this.username + "/repos?access_token=f2be356f299b53e4094bcbf06e66c17837159ac7").pipe((res => res));
   }
   replaceUser(username: string){
     this.username = username;
   }
+
 
 }
 
